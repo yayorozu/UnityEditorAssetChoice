@@ -9,7 +9,7 @@ public static class SampleAssetChoiceMenuItem
     /// 選択したアセットを選択肢として表示
     /// </summary>
     [MenuItem("Tools/Sample/Asset Choice")]
-    private static void Test()
+    private static void AssetChoice()
     {
         AssetChoiceModal.ShowModalFromGUID(Selection.assetGUIDs, ShowSelectAssets);
     }
@@ -18,7 +18,7 @@ public static class SampleAssetChoiceMenuItem
     /// 選択したアセット以下ディレクトリの中身を選択肢として表示
     /// </summary>
     [MenuItem("Tools/Sample/Asset Choice TopDirectory")]
-    private static void Test2()
+    private static void AssetChoiceTopDirectory()
     {
         AssetChoiceModal.ShowModalFromGUID(Selection.assetGUIDs, ShowSelectAssets, Option.TopDirectoryOnly);
     }
@@ -27,7 +27,7 @@ public static class SampleAssetChoiceMenuItem
     /// 選択したアセット以下の全部を選択肢として表示
     /// </summary>
     [MenuItem("Tools/Sample/Asset Choice AllDirectories")]
-    private static void Test3()
+    private static void AssetChoiceAllDirectories()
     {
         AssetChoiceModal.ShowModalFromGUID(Selection.assetGUIDs, ShowSelectAssets, Option.AllDirectories);
     }
