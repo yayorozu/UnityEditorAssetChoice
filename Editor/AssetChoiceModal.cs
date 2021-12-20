@@ -79,7 +79,7 @@ namespace Yorozu.EditorTool.AssetChoice
             _treeView.OnGUI(rect);
 
             // 選択終了
-            if (GUILayout.Button("Choose"))
+            if (GUILayout.Button("Choice"))
             {
                 _state.Close();
                 Close();
